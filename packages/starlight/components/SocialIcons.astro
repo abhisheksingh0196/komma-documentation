@@ -6,7 +6,7 @@ import type { Props } from '../props';
 type Platform = keyof NonNullable<typeof config.social>;
 type SocialConfig = NonNullable<NonNullable<typeof config.social>[Platform]>;
 const links = Object.entries(config.social || {}) as [Platform, SocialConfig][];
-----
+---
 
 {
 	links.length > 0 && (
